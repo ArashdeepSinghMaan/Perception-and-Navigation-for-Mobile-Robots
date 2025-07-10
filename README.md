@@ -63,7 +63,7 @@ Each folder is self-contained and includes:
 
 ## 📜 License
 
-This project is licensed under the [MIT License](./LICENSE).
+This project is licensed under the [Apache License ](./LICENSE).
 
 ---
 
