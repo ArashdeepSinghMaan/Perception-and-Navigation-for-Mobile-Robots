@@ -1,2 +1,72 @@
-# Perception-and-Navigation-for-Mobile-Robots
-This Repository is focused on sensor fusion, mapping, localisation, SLAM, and planning for Mobile Robots and UAVs.
+
+# Perception and Navigation for Mobile Robots and UAVs
+
+This repository contains multiple sub-projects focused on sensor fusion, perception, and navigation using various sensor combinations on mobile robots such as the Husky A200 and a quadcopter. Each folder contains specific experiments or implementations involving different combinations of sensors for localization and navigation.
+
+---
+
+## 📁 Folder Structure and Descriptions
+
+### 🛩️ Quadcopter-Based Sensor Fusion
+
+- **IMU+Barometer+GPS+Magnetometer_Using_Quadcopter**  
+  Combines inertial measurements with barometric pressure, GPS, and magnetometer data for altitude and orientation estimation.
+
+- **IMU+GPS+Lidar_Using_Quadcopter**  
+  Uses GPS for global positioning, LIDAR for obstacle sensing, and IMU for attitude estimation to navigate the quadcopter safely in outdoor environments.
+
+- **IMU+Radar+GPS_Using_Quadcopter**  
+  Integrates radar for long-range obstacle detection with GPS and IMU data for robust navigation in GPS-available environments.
+
+- **IMU+Ultra_wideband_Using_Quadcopter**  
+  Fuses IMU with UWB data for precise indoor localization without relying on GPS.
+
+- **IMU+VisualOdometry_Using_Quadcopter**  
+  Implements visual odometry using onboard cameras, integrated with IMU data for pose estimation.
+
+- **IMU+VisualSLAM_Using_Quadcopter**  
+  Full SLAM pipeline combining camera data with IMU measurements to simultaneously localize and map the environment.
+
+---
+
+### 🤖 Husky A200-Based Sensor Fusion
+
+- **IMU+Camera_Using_Husky_A200**  
+  Uses an onboard camera and IMU for localization and movement tracking in indoor or semi-structured environments.
+
+- **IMU+GPS+Wheel_Encoder_Using_Husky_A200**  
+  Combines odometry (wheel encoders), GPS, and IMU for outdoor navigation with drift correction.
+
+- **IMU+Lidar+Camera_Using_Husky_A200**  
+  Implements a sensor suite of LIDAR, camera, and IMU for visual-LIDAR odometry or SLAM-based navigation.
+
+- **IMU+Wheel_Encoders+Camera_Using_Husky_A200**  
+  Uses wheel odometry and camera data fused with IMU to navigate indoor structured environments.
+
+- **IMU+Wheel_Encoders+Lidar_Using_Husky_A200**  
+  Combines LIDAR with wheel encoders and IMU to implement a SLAM system or local path planning.
+
+---
+
+## 🔧 Purpose of This Repository
+
+This repository serves as a resource hub for learning and implementing:
+- Sensor fusion using Kalman filters and ROS
+- Localization using different sensor modalities
+- Navigation and SLAM with mobile robots
+- Comparison of performance across different sensor combinations
+
+Each folder contains its own configuration files, launch scripts, and code to reproduce the experiments.
+
+---
+
+## 📜 License
+
+This project is licensed under the [MIT License](./LICENSE).
+
+---
+
+## 🤝 Contributions
+
+Contributions are welcome! If you want to add new sensor fusion techniques, navigation algorithms, or improve documentation, feel free to open a PR.
+
