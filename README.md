@@ -46,17 +46,18 @@ This repository contains multiple sub-projects focused on sensor fusion, percept
 - **IMU+Wheel_Encoders+Lidar_Using_Husky_A200**  
   Combines LIDAR with wheel encoders and IMU to implement a SLAM system or local path planning.
 
----
+## 🎯 Objective
 
-## 🔧 Purpose of This Repository
+The core objective of this repository is to:
+- Implement and compare different **sensor fusion** strategies for pose estimation.
+- Study the effects of sensor drift, noise, and availability.
+- Provide practical ROS-based configurations for both indoor and outdoor robot localization.
 
-This repository serves as a resource hub for learning and implementing:
-- Sensor fusion using Kalman filters and ROS
-- Localization using different sensor modalities
-- Navigation and SLAM with mobile robots
-- Comparison of performance across different sensor combinations
-
-Each folder contains its own configuration files, launch scripts, and code to reproduce the experiments.
+Each folder is self-contained and includes:
+- Sensor configuration
+- ROS launch files
+- Data recording and playback scripts (bag files, where applicable)
+- Pose estimation code or pipelines
 
 ---
 
